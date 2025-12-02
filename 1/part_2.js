@@ -34,8 +34,7 @@ Using password method 0x434C49434B, what is the password to open the door?
 //read the file
 const fs = require("fs");
 const raw = fs.readFileSync("data.txt", "utf-8");
-//split it based on space
-const fileNumbers = raw.split("\n").map(line => line.trim().split("/\s+/"));
+//split it
 const lines = raw.split(/\r?\n/);
 
 let dial = 50;
